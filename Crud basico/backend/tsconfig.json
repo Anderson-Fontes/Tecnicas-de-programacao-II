@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "es2020",                  /* Especifica a versão do ECMAScript para a saída. */
+    "module": "CommonJS",                /* Especifica o sistema de módulos de saída como CommonJS. */
+    "rootDir": "./src",                  /* Especifica o diretório raiz dos arquivos de entrada. */
+    "outDir": "./dist",                  /* Especifica o diretório de saída. */
+    
+    /* Configurações de Módulos Cruciais */
+    "esModuleInterop": true,             /* Permite interoperabilidade padrão para importações CommonJS. ESTE É O ESSENCIAL. */
+    "moduleResolution": "node",          /* Estratégia para resolver módulos, usando a lógica do Node. */
+    
+    /* Verificação de Tipos e Outros */
+    "strict": true,                      /* Habilita todas as opções de verificação de tipos estritos. */
+    "skipLibCheck": true,                /* Ignora arquivos de declaração .d.ts. */
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
