@@ -1,0 +1,25 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    /* Opções Básicas */
+    "target": "es2020",                       /* Especifica a versão do ECMAScript (saída) */
+    "module": "commonjs",                     /* Especifica o sistema de módulos: CommonJS é padrão para Node.js */
+    "rootDir": "./src",                       /* Especifica a pasta raiz dos arquivos de entrada (.ts) */
+    "outDir": "./dist",                       /* Especifica a pasta de saída dos arquivos compilados (.js) */
+    "esModuleInterop": true,                  /* Habilita interoperabilidade para módulos CommonJS e ES */
+    "forceConsistentCasingInFileNames": true, /* Garante a consistência de maiúsculas/minúsculas nos nomes dos arquivos */
+    
+    /* Configuração para o Node.js */
+    "moduleResolution": "node",               /* Estratégia de resolução de módulos para Node.js */
+    
+    /* Opções de Verificação de Tipo */
+    "strict": true,                           /* Habilita todas as opções estritas de verificação de tipo */
+    "skipLibCheck": true                      /* Pula a verificação de tipo de arquivos de declaração (libs) */
+  },
+  "include": [
+    "./src/**/*.ts"                           /* Inclui todos os arquivos .ts na pasta src */
+  ],
+  "exclude": [
+    "node_modules"                            /* Exclui a pasta node_modules da compilação */
+  ]
+}
